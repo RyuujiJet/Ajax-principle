@@ -82,7 +82,7 @@ getCSS.onclick = () => {
   let n = 1
   getPAGE.onclick = () => {
     const request = new XMLHttpRequest()
-    request.open('GET', `./page${n + 1}.json`)
+    request.open('GET', `/page${n + 1}.json`)
     request.onreadystatechange = () => {
       if (request.readyState === 4) {
         if (request.status >= 200 && request.status < 300) {
